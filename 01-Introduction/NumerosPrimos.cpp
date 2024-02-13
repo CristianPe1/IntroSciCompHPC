@@ -15,9 +15,7 @@ int main() {
         }
     }
     if (esPrimo) {
-        cout << "Es primo" << endl;
-    } else {
-        cout << "No es primo" << endl;
+       std::cout << n << " ";
     }
     return 0;
 }
