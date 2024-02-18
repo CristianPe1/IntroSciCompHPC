@@ -5,17 +5,20 @@ using namespace std;
 
 
 int main() {
-    int n;
-    cin >> n;
-    bool esPrimo = true;
-    for (int i = 2; i <= sqrt(n); i++) {
-        if (n % i == 0) {
-            esPrimo = false;
-            break;
+    for (int num = 10; num <= 30; ++num) {
+        bool esPrimo = true;
+
+        if (num > 1) {
+        for (int i = 2; i <= sqrt(num); i++) {
+            if (num % i == 0) {
+                esPrimo = false;
+                break;
+            }
         }
-    }
-    if (esPrimo) {
-       std::cout << n << " ";
+        if (esPrimo) {
+            std::cout << num << " ";
+        }
+        }
     }
     return 0;
 }
